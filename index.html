@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EllaBlur</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+
+  
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      
+    </style>
+        <style>
+          /* Custom gradient animation */
+          @keyframes gradientBG {
+              0% {
+                  background-position: 0% 50%;
+              }
+              50% {
+                  background-position: 100% 50%;
+              }
+              100% {
+                  background-position: 0% 50%;
+              }
+          }
+  
+          .animated-gradient {
+              background: linear-gradient(270deg, #ff6b6b, #f06595, #d1a6b4, #f9a03f);
+              background-size: 400% 400%;
+              animation: gradientBG 15s ease infinite;
+          }
+      </style>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed" style="background-image: url('header.png');">
+    <div class="h-full">
+      <!--Nav-->
+      <div class="w-full container mx-auto">
+        <div class="w-full flex items-center justify-between">
+          <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            Ella<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">blur</span>
+          </a>
+          <div class="flex w-1/2 justify-end content-center">
+            <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out" href="https://www.instagram.com/your-username">
+              <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                  d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://www.facebook.com/sharer/sharer.php?u=#"
+            >
+              <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div class="flex flex-wrap items-center justify-center">
+          <!-- Left Col -->
+          <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+            <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+              Wanna
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+                Create
+              </span>
+              Your Own World Now!!
+            </h1>
+            <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+              Press a Button, Get What You Want!
+            </p>
+            <div class="flex items-center justify-between pt-4">
+              <a
+                  href="main.html"
+                  class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out inline-block"
+                >
+                  Come On
+                </a>
+
+            </div>
+          </div>
+        
+          <!-- Right Col -->
+          <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+            <img 
+              class="mx-auto w-full md:w-3/4 xl:w-full transform -rotate-6 transition hover:scale-110 duration-700 ease-in-out hover:rotate-6" 
+              src="macbook.svg" 
+              alt="MacBook Image"
+            />
+          </div>
+
+          
+        </div>
+        
+
+      </div>
+
+      <div>
+
+        <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+
+            <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+                <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+
+                    <p class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
+                    What We Do?
+                    </p>
+
+                    <div class="flex items-center" id="store-nav-content">
+
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
+                            </svg>
+                        </a>
+
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
+                            </svg>
+                        </a>
+
+                    </div>
+              </div>
+            </nav>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Man marks completed tasks in a notebook Illustration.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>First: Think about Any Idea And Tell us!</p>
+                  </div>
+                  <p class="pt-1 text-gray-900">£9.99</p>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Free Vector _ Writers block concept illustration.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>We Will Immediately Think And Make You A Perfect And Amazing Design</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Businesswoman Customizable Cartoon Illustrations _ Bro Style.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>We Will Think About People Requirements and Apply It!</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Free Vector _ Team work concept illustration.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>We Will Gather Our Team And Make your Website As You Wish!</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Free Vector _ Multitasking concept illustration.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>With The Most Qualified Team, Your Work Will Be Done Easier Than a Pie!</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Coding Customizable Cartoon Illustrations _ Bro Style.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>And With The Best Coder Around, The System Will be Smooth Like Butter!</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="Spreadsheets Customizable Cartoon Illustrations _ Bro Style.jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>There Are No Worries About The Database, We Will Collect It for You!</p>
+                  </div>
+              </a>
+          </div>
+          
+          <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+              <a href="#">
+                  <img class="hover:grow hover:shadow-lg transition duration-500 rounded-lg" src="download (2).jpeg">
+                  <div class="pt-3 flex items-center justify-between">
+                      <p>Then We Will Reach Our Goal, All Of That With The Best Salary</p>
+                  </div>
+              </a>
+          </div>
+          
+          
+<br><br>
+            <div class="container">
+              <section>
+                <div class="container mx-auto px-6">
+                  <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">About Us</h2>
+                    <p class="mt-4 text-gray-600">Building the future, one line of code at a time.</p>
+                  </div>
+                  
+                  <div class="flex flex-wrap items-stretch justify-center">
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                      <div class="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
+                        <p class="text-gray-600 leading-relaxed flex-grow">
+                          At EllaBlur Development Company, we are a team of passionate developers, designers, and strategists dedicated to crafting high-quality, innovative solutions. We thrive on transforming ideas into powerful digital experiences.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                      <div class="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed flex-grow">
+                          Our mission is to empower businesses with cutting-edge technology solutions that drive growth and efficiency. We are committed to delivering excellence in every project, ensuring our clients achieve their goals with confidence.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-6">
+                      <div class="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">What We Do</h3>
+                        <p class="text-gray-600 leading-relaxed flex-grow">
+                          From web development to mobile apps and custom software solutions, EllaBlur specializes in creating dynamic and responsive digital products. We blend creativity with technical expertise to deliver solutions that make a difference.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <br><br>
+            </div>
+            <div class="container">
+
+              <section>
+                <div class="container mx-auto px-6">
+                  <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">Customer Feedback</h2>
+                    <p class="mt-4 text-gray-600">Hear what our satisfied customers have to say about us.</p>
+                  </div>
+              
+                  <div class="relative flex overflow-hidden">
+                    <!-- Carousel Wrapper -->
+                    <div class="carousel flex transition-transform duration-700 ease-in-out transform-gpu">
+                      <!-- Slide 1 -->
+                      <div class="w-full flex-shrink-0 transition-opacity duration-700 ease-in-out">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mx-4 opacity-0 fade-in">
+                          <p class="text-lg text-gray-600">"EllaBlur delivered beyond our expectations. The design and functionality were spot on!"</p>
+                          <p class="mt-4 font-semibold text-gray-800">- Jane Doe</p>
+                        </div>
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="w-full flex-shrink-0 transition-opacity duration-700 ease-in-out">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mx-4 opacity-0 fade-in">
+                          <p class="text-lg text-gray-600">"Their team was highly professional and delivered our project on time. Highly recommended!"</p>
+                          <p class="mt-4 font-semibold text-gray-800">- John Smith</p>
+                        </div>
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="w-full flex-shrink-0 transition-opacity duration-700 ease-in-out">
+                        <div class="bg-white rounded-lg shadow-lg p-6 mx-4 opacity-0 fade-in">
+                          <p class="text-lg text-gray-600">"Great experience working with EllaBlur. They understood our needs perfectly and provided a great solution."</p>
+                          <p class="mt-4 font-semibold text-gray-800">- Emily Johnson</p>
+                        </div>
+                      </div>
+                      <!-- Add more slides as needed -->
+                    </div>
+              
+                    <!-- Carousel Controls -->
+                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none" onclick="moveSlide(-1)">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none" onclick="moveSlide(1)">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Add JavaScript for Carousel -->
+              <script>
+                let currentIndex = 0;
+              
+                function moveSlide(direction) {
+                  const slides = document.querySelectorAll('.carousel > div');
+                  const totalSlides = slides.length;
+              
+                  // Reset all slides
+                  slides.forEach(slide => {
+                    slide.querySelector('.fade-in').classList.remove('fade-in-active');
+                    slide.querySelector('.fade-in').classList.add('opacity-0');
+                  });
+              
+                  // Update current index
+                  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+              
+                  // Apply transform and fade-in effect to the current slide
+                  const offset = -currentIndex * 100;
+                  document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+                  slides[currentIndex].querySelector('.fade-in').classList.remove('opacity-0');
+                  slides[currentIndex].querySelector('.fade-in').classList.add('fade-in-active');
+                }
+              
+                // Initialize the first slide
+                document.addEventListener('DOMContentLoaded', () => {
+                  document.querySelector('.carousel > div .fade-in').classList.add('fade-in-active');
+                });
+              </script>
+              
+              <!-- Custom CSS for Animations -->
+              <style>
+                .fade-in {
+                  opacity: 0;
+                  transition: opacity 0.7s ease-in-out;
+                }
+              
+                .fade-in-active {
+                  opacity: 1;
+                }
+              </style>
+              
+              
+            </div class="container align-center">
+             <!-- Footer -->
+            
+            </div>
+            <footer class="animated-gradient p-10 text-white mt-10">
+              <div class="container mx-auto flex flex-col items-center">
+                  <!-- Footer Content -->
+                  <div class="text-center mb-6">
+                      <h1 class="text-3xl font-bold mb-2">EllaBlur</h1>
+                      <p class="text-sm">© 2024 EllaBlur. All rights reserved.</p>
+                      <p class="mt-2 text-sm">1234 Elm Street, Cairo, YC 56789</p>
+                      <p class="text-sm">Email: info@ellablur.com</p>
+                      <p class="text-sm">Phone: +123-456-7890</p>
+                  </div>
+      
+                  <!-- Social Media Icons -->
+                  <div class="flex space-x-6 mb-6">
+                      <a href="https://twitter.com" class="transition-transform transform hover:scale-110 hover:text-gray-200">
+                          <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M22.23 6.3a6.11 6.11 0 0 0-1.768-.481c-.825-0-1.598.316-2.162.83-.565-.308-1.165-.477-1.79-.477-1.65 0-2.99 1.355-2.99 3.024 0 .236.027.466.08.689-2.485-.126-4.684-1.32-6.146-3.146-.257.441-.404.954-.404 1.504 0 1.037.519 1.951 1.309 2.487-.481-.016-.933-.147-1.329-.367-.001.014-.001.027-.001.042 0 1.447 1.018 2.654 2.368 2.924-.248.067-.52.103-.791.103-.193 0-.382-.019-.568-.055.382 1.167 1.498 2.014 3.38 2.038-1.031.812-2.337 1.295-3.755 1.295-.244 0-.485-.014-.725-.043 1.348.877 2.94 1.39 4.658 1.39 5.572 0 8.606-4.61 8.606-8.606 0-.132-.003-.263-.009-.394a6.12 6.12 0 0 0 1.501-1.561z"/>
+                          </svg>
+                      </a>
+                      <a href="https://facebook.com" class="transition-transform transform hover:scale-110 hover:text-gray-200">
+                          <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M22.676 0h-21.352c-.733 0-1.324.591-1.324 1.325v21.351c0 .733.591 1.324 1.324 1.324h11.337v-9.294h-3.07v-3.708h3.07v-2.726c0-3.042 1.854-4.694 4.56-4.694 1.28 0 2.378.095 2.698.138v3.141l-1.846.001c-1.444 0-1.73.686-1.73 1.688v2.214h3.466l-.451 3.708h-3.015v9.294h5.923c.733 0 1.325-.591 1.325-1.324v-21.351c0-.733-.592-1.325-1.325-1.325z"/>
+                          </svg>
+                      </a>
+                      <a href="https://instagram.com" class="transition-transform transform hover:scale-110 hover:text-gray-200">
+                          <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                              <path d="M12 2.2c-5.3 0-9.8 4.5-9.8 9.8s4.5 9.8 9.8 9.8 9.8-4.5 9.8-9.8-4.5-9.8-9.8-9.8zm0 16.1c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm3.5-8.7c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3zm5.3-4.6c0 .6-.4 1.2-1.1 1.2-.6 0-1.2-.5-1.2-1.2s.4-1.2 1.2-1.2c.6 0 1.1.5 1.1 1.2z"/>
+                          </svg>
+                      </a>
+                  </div>
+      
+                  <!-- Contact Us Section -->
+                  <div class="w-full md:w-1/3 text-center">
+                      <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+                      <form class="space-y-4">
+                          <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300">
+                          <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300">
+                          <textarea placeholder="Your Message" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300" rows="4"></textarea>
+                          <button type="submit" class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-lg transition duration-300">Send Message</button>
+                      </form>
+                  </div>
+              </div>
+          </footer>
+          </div>
+    </div>
+  </body>
+</html>
